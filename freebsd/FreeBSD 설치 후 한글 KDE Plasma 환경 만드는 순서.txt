@@ -1,0 +1,62 @@
+# = root, $ = 사용자
+FreeBSD 설치는 그냥 디폴트 설정을 따라가면 되기 때문에 초보자도 쉽게 설치할 수 있다
+주의할건 사용자 추가할 때 반드시 wheel 그룹에 추가할 것
+
+여기서 부터 FreeBSD 설치하고 부팅 후
+
+패키지 한 번에 설치
+# pkg update
+# pkg install xorg
+# pkg install noto
+# pkg install sddm kde
+# pkg install ko-fcitx5-hangul fcitx5-configtool-qt6
+# pkg install doas 또는 sudo
+# pkg install octopkg
+
+SDDM 설정
+# sysrc dbus_enable=YES
+# sysrc sddm_enable=YES
+
+KDE Plasma 설정
+# vi /etc/sysctl.conf
+net.local.stream.recvspace=65536
+net.local.stream.sendspace=65536
+
+sudo 설정
+# visudo
+%wheel ALL=(ALL:ALL) ALL
+
+doas 설정
+# cp /usr/local/etc/doas.conf.sample /usr/local/etc/doas.conf
+또는
+# vi /usr/local/etc/doas.conf
+permit nopass keepenv :wheel
+
+로케일 및 한글 입력 설정
+$ vi ~/.xprofile
+export LANG="ko_KR.UTF-8"
+export LC_ALL="ko_KR.UTF-8"
+export XMODIFIERS='@im=fcitx'
+export GTK_IM_MODULE=fcitx/xim
+export QT_IM_MODULE=fcitx
+
+option :
+$ vi ~/.cshrc
+setenv LANG ko_KR.UTF-8
+setenv LC_ALL ko_KR.UTF-8
+setenv XMODIFIERS @im=fcitx
+setenv GTK_IM_MODULE fcitx/xim
+setenv QT_IM_MODULE fcitx
+
+etc. :
+# vi /boot/loader.conf
+autoboot_delay="5"
+
+# reboot
+
+KDE Plasma 로그인 후
+
+터미널에서
+$ fcitx5-config-qt
+
+KDE 설정에서 SDDM 자동 로그인 설정
