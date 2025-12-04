@@ -1,10 +1,10 @@
 # vwap1.github.io
 
-[Price Action](/html/index.html)
+[Price Action](https://vwap1.github.io/html/index.html)
 
-[닌자트레이더 Unirenko & HeikinAshi 설치 및 설정 방법](/html/howto-install-and-setup-unirenko-and-heikin-ashi-candles-in-nt8.html)
+[닌자트레이더 Unirenko & HeikinAshi 설치 및 설정 방법](https://vwap1.github.io/html/howto-install-and-setup-unirenko-and-heikin-ashi-candles-in-nt8.html)
 
-[VWAP을 이용한 매매전략](/html/vwap-strategy.html)
+[VWAP을 이용한 매매전략](https://vwap1.github.io/html/vwap-strategy.html)
 
 [한국 CME 브로커](https://www.cmegroup.com/ko/tools-information/find-a-broker.html){: target="_blank"}
 
