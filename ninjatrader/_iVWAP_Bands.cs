@@ -1,7 +1,6 @@
 
 /*
-Calculate 옵션에 따라서 폭주하는 버그를 수정
-for 루틴이 제거된 표준편차 추가
+폭주 버그 수정 + 표준편차 밴드
 */
 
 #region Using declarations
