@@ -1,7 +1,7 @@
 (function() {
    const h3 = document.getElementById('title');
-   if ("index" == document.title) {
-     h3.append("Home");
+   if ("index" == document.title || "" == document.title) {
+     h3.append("Index");
    }
    else {
      const a1 = document.createElement('a');
