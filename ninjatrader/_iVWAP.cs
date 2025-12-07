@@ -1,6 +1,6 @@
 
 /*
-Calculate 옵션에 따라서 폭주하는 버그를 수정
+폭주 버그 수정
 */
 
 #region Using declarations
