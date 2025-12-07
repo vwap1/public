@@ -1,1 +1,1 @@
-[vwap1.github.io](https://vwap1.github.io/public)
+[https://vwap1.github.io/public](https://vwap1.github.io/public)
