@@ -1,3 +1,4 @@
+
 (function() {
    const h3 = document.getElementById('title');
    if ("index" == document.title || "" == document.title) {
