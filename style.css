@@ -31,6 +31,7 @@ a:active {
   font-weight:bold;
   color:royalblue;
 }
+
 /* blogger.com 이미지 크기 자동 조정. 포스트에 반드시 원본 사이즈로 설정해야 한다 */
 .post-body img {
   max-width:100%;
