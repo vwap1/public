@@ -1,26 +1,32 @@
 (function() {
+
    const h3 = document.getElementById('title');
-   if ("index" == document.title) {
-     h3.append("Index");
-	 /*
-     const a1 = document.createElement('a');
-     a1.href = "/";
-     a1.style = "color:royalblue";
-     a1.append("Home");
-     h3.appendChild(a1);
-     h3.append(" :: " + document.title);
-	 */
+
+   if (window.location.pathname.includes('/html/')) {
+
+      const a1 = document.createElement('a');
+
+	  a1.href = '../index.html';
+      a1.style = 'color:royalblue';
+      a1.append('Index');
+
+	  h3.prepend(' - ');
+	  h3.prepend(a1);
+      h3.append(document.title);
    }
    else {
-     const a1 = document.createElement('a');
-     a1.href = "index.html";
-     a1.style = "color:royalblue";
-     a1.append("Index");
-     h3.appendChild(a1);
-     h3.append(" :: " + document.title);
+	  /*
+      const a1 = document.createElement('a');
+      a1.href = "index.html";
+      a1.style = "color:royalblue";
+      a1.append("Index");
+      h3.appendChild(a1);
+      h3.append(" :: " + document.title);
+	  */
+      h3.innerHTML = ''; // 내용 모두 삭제
+      h3.append('Index');
    }
 })();
-
 
 // Open external links in new tabs and open internal links in current tabs
 var links    = document.getElementsByTagName("a");
