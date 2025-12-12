@@ -12,7 +12,7 @@
 
 	  h3.prepend(' - ');
 	  h3.prepend(a1);
-      h3.append(document.title);
+      // h3.append(document.title);
    }
    else {
 	  /*
